@@ -1,5 +1,6 @@
 # PL-PGSQL
-
+Function in sql 
+![Functionmulit](https://user-images.githubusercontent.com/99954777/191488932-326d8091-18b7-49fd-8920-9557e4b981b5.png)
 nth salary using sql 
 ![nthsalary](https://user-images.githubusercontent.com/99954777/191486790-6b670b63-a9c3-42fa-95cb-0452cc321fe2.jpg)
 valid age 
