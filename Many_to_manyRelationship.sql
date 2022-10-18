@@ -6,13 +6,12 @@ postgres=# create table TeacherBJS(t_no int primary key, t_name varchar(20), qul
 CREATE TABLE
 postgres=# insert into TeacherBJS(t_no,t_name, qulification,experience) values( 21,'Gauri Shinde','MCA',3),(34,'Suverna Patil','PHD',7),(90,'Manvatkar SiINSERT 0 5
 INSERT 0 5
-create table subject1(s_id int ,techer_id int references TeacherBJS(t_no), student_id int references StuPranil(s_no),subject varchar(60),CONSTRAINT S_T_table primary key(techer_id,student_id));
+create table subject1(techer_id int references TeacherBJS(t_no), student_id int references StuPranil(s_no),subject varchar(60),CONSTRAINT S_T_table primary key(techer_id,student_id));
 CREATE TABLE
 postgres=# \d subject1;
                        Table "public.subject1"
    Column   |         Type          | Collation | Nullable | Default 
 ------------+-----------------------+-----------+----------+---------
- s_id       | integer               |           |          | 
  techer_id  | integer               |           | not null | 
  student_id | integer               |           | not null | 
  subject    | character varying(60) |           |          | 
