@@ -128,3 +128,9 @@ postgres=# select *from subject1;
 (1 row)
 
 Question 2. List the names of the students to whom‘ ---------’ is teaching.
+postgres=# select name from StuPranil where s_no = ( select student_id from subject1 where subject='CN');
+      name       
+-----------------
+ Pranil Takawane
+(1 row)
+
