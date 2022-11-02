@@ -143,3 +143,11 @@ WHERE t_name LIKE 'M%';
  Manvatkar Si
 (1 row)
 
+Question 4. List the names of teachers teaching subject ‘DBMS’.
+
+postgres=# select t_name from TeacherBJS where t_no = (select techer_id from subject1 where subject = 'DBMS');
+    t_name     
+---------------
+ Shardha Patil
+(1 row)
+
