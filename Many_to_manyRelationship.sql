@@ -134,3 +134,12 @@ postgres=# select name from StuPranil where s_no = ( select student_id from subj
  Pranil Takawane
 (1 row)
 
+Question 3. List the details of all teachers whose names start with the alphabet ‘M’.
+
+postgres=# SELECT t_name FROM TeacherBJS
+WHERE t_name LIKE 'M%';
+    t_name    
+--------------
+ Manvatkar Si
+(1 row)
+
