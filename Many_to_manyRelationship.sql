@@ -151,3 +151,11 @@ postgres=# select t_name from TeacherBJS where t_no = (select techer_id from sub
  Shardha Patil
 (1 row)
 
+Quetion 5.  Find the number of teachers having qualification as ‘Ph.D.’.
+
+postgres=# select count(t_no) from TeacherBJS where qulification='PHD';
+ count 
+-------
+     1
+(1 row)
+
